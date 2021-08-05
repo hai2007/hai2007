@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 <!--
-**hai2007/hai2007** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**inier/inier** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
@@ -13,4 +13,11 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
+
 -->
+
+<br>
+
+<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=hai2007&show_icons=true&theme=light" alt="hrt" /> </p>
+
+<p align="center"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hai2007&show_icons=true&layout=compact&theme=light"" alt="hrt" /> </p>
