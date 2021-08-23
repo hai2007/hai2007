@@ -1,0 +1,85 @@
+#!/usr/bin/env node
+
+'use strict';
+
+process.title = 'hai2007-cli';
+
+const hai2007_nodejs = require('@hai2007/nodejs');
+const inquirer = require('inquirer');
+const pkg = require('../package.json');
+const fs = require('fs');
+
+const parsed = hai2007_nodejs.option({
+
+    // 版本号
+    "-v": "--version"
+
+}, process.argv);
+
+const terminal = parsed.__terminal__[0];
+
+// 如果是创建新的项目
+if (terminal == 'create') {
+
+    // 先获取参数
+    inquirer.prompt([{
+        type: 'input',
+        name: 'name',
+        message: '请输入项目名称',
+        default: 'projectname'
+    }, {
+        type: 'input',
+        name: 'description',
+        message: '请输入项目描述',
+        default: ''
+    }, {
+        type: 'rawlist',
+        name: 'kind',
+        message: '',
+        choices: ['Document', 'Vue2', 'Angular1'],
+        default: 0
+    }]).then(answers => {
+
+        // 校对一些特殊参数
+        if (answers.kind == 'Document') answers.kind = 'QuickPaper';
+
+        let sourcePath = hai2007_nodejs.fullPath('../repository/' + answers.kind, __dirname);
+        let targetPath = hai2007_nodejs.fullPath('./' + answers.name, process.cwd());
+
+        // 复制项目到命令行所在位置
+        hai2007_nodejs.copySync(sourcePath, targetPath);
+
+        // 修改项目参数
+        for (let item of ["index.html", "package.json", 'package-lock.json']) {
+
+            let targetFile = hai2007_nodejs.fullPath('./' + answers.name + "/" + item, process.cwd());
+
+            // 读取
+            let fileContent = fs.readFileSync(targetFile, 'utf-8');
+
+            // 替换内容
+            fileContent = fileContent.replace('project-name-will-replace', answers.name);
+            fileContent = fileContent.replace('project-description-will-replace', answers.description);
+
+            // 写回
+            fs.writeFileSync(targetFile, fileContent);
+
+        }
+
+    });
+
+}
+
+// 否则
+else {
+
+    if ('version' in parsed) {
+
+        // 打印版本号
+        console.log(pkg.version);
+
+    } else {
+        // todo
+    }
+
+}

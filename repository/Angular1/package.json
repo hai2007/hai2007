@@ -1,0 +1,26 @@
+{
+  "name": "project-name-will-replace",
+  "version": "0.1.0",
+  "description": "project-description-will-replace",
+  "scripts": {
+    "start": "npm install && npm run dev",
+    "clean": "hai2007_nodejs -d build",
+    "dev": "./node_modules/.bin/grunt",
+    "build": "npm run clean && npm run prod",
+    "prod": "node_modules/.bin/grunt prod"
+  },
+  "author": "你好2007",
+  "license": "MIT",
+  "devDependencies": {
+    "@hai2007/nodejs": "^0.1.0",
+    "autoprefixer": "^7.2.5",
+    "grunt": "^1.0.4",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^2.1.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-postcss": "^0.9.0"
+  }
+}
