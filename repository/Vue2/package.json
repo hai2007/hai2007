@@ -12,7 +12,7 @@
   "author": "你好2007",
   "license": "MIT",
   "dependencies": {
-    "@hai2007/algorithm": "^0.5.1",
+    "@hai2007/algorithm": "^0.6.3",
     "@hai2007/polyfill": "^0.1.1",
     "@hai2007/style": "^0.3.0",
     "@hai2007/tool": "^0.6.6",

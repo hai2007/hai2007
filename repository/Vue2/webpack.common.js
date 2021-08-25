@@ -32,7 +32,6 @@ module.exports = {
                 options: {
                     publicPath: "../",
                     name: "build/[path][name].[ext]",
-                    context: "src/asset",
                     limit: 5000
                 }
             }]
