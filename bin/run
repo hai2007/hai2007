@@ -36,12 +36,9 @@ if (terminal == 'create') {
         type: 'rawlist',
         name: 'kind',
         message: '',
-        choices: ['Document', 'Vue2', 'Angular1'],
+        choices: ['Quick-Paper', 'Vue2', 'Angular1'],
         default: 0
     }]).then(answers => {
-
-        // 校对一些特殊参数
-        if (answers.kind == 'Document') answers.kind = 'QuickPaper';
 
         let sourcePath = hai2007_nodejs.fullPath('../repository/' + answers.kind, __dirname);
         let targetPath = hai2007_nodejs.fullPath('./' + answers.name, process.cwd());

@@ -27,6 +27,6 @@
   "dependencies": {
     "@hai2007/polyfill": "^0.1.1",
     "@hai2007/style": "^0.2.3",
-    "quick-paper": "^0.6.0"
+    "quick-paper": "^1.0.0"
   }
 }
