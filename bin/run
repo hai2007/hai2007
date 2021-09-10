@@ -2,6 +2,12 @@
 
 'use strict';
 
+/**
+    本工具主要是提供一些快捷功能，
+    目前提供的功能如下：
+    1.快速初始化文档项目（目前文档选用Quick-Paper框架搭建）
+*/
+
 process.title = 'hai2007-cli';
 
 const hai2007_nodejs = require('@hai2007/nodejs');
@@ -18,7 +24,7 @@ const parsed = hai2007_nodejs.option({
 
 const terminal = parsed.__terminal__[0];
 
-// 如果是创建新的项目
+// 如果是初始化一些快捷项目
 if (terminal == 'create') {
 
     // 先获取参数
@@ -36,11 +42,11 @@ if (terminal == 'create') {
         type: 'rawlist',
         name: 'kind',
         message: '',
-        choices: ['Quick-Paper', 'Vue2', 'Angular1'],
+        choices: ['API-project'],
         default: 0
     }]).then(answers => {
 
-        let sourcePath = hai2007_nodejs.fullPath('../repository/' + answers.kind, __dirname);
+        let sourcePath = hai2007_nodejs.fullPath('../' + answers.kind, __dirname);
         let targetPath = hai2007_nodejs.fullPath('./' + answers.name, process.cwd());
 
         // 复制项目到命令行所在位置
