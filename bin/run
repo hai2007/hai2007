@@ -3,24 +3,32 @@
 'use strict';
 
 /**
-    本工具主要是提供一些快捷功能，
-    目前提供的功能如下：
-    1.快速初始化文档项目（目前文档选用Quick-Paper框架搭建）
+本工具主要是提供一些快捷功能，
+方便日常开发或生活。
 */
 
 process.title = 'hai2007-cli';
 
+// 来自node包的资源
 const hai2007_nodejs = require('@hai2007/nodejs');
 const inquirer = require('inquirer');
-const pkg = require('../package.json');
+
+// 原生接口
 const fs = require('fs');
+const os = require("os");
 
-const parsed = hai2007_nodejs.option({
+// 本地资源
+const pkg = require('../package.json');
+const options = require('./options');
 
-    // 版本号
-    "-v": "--version"
+// 组装好缩写和全写的映射
+let shortHands = {};
+for (let key in options.config) {
+    if (options.config[key].short) shortHands["-" + options.config[key].short] = "--" + key;
+}
 
-}, process.argv);
+// 获取命令行参数
+const parsed = hai2007_nodejs.option(shortHands, process.argv);
 
 const terminal = parsed.__terminal__[0];
 
@@ -73,6 +81,12 @@ if (terminal == 'create') {
 
 }
 
+else if (terminal == 'network') {
+
+    console.info(os.networkInterfaces());
+
+}
+
 // 否则
 else {
 
@@ -81,8 +95,34 @@ else {
         // 打印版本号
         console.log(pkg.version);
 
+    } else if ('help' in parsed) {
+
+        console.log(parsed);
+        let commandOption = options.command[parsed.help[0]];
+        if (commandOption) {
+
+            let configs = "";
+            for (let item of commandOption.config) {
+                configs += `【${options.config[item].info}】 ${options.config[item].demo}\n`;
+            }
+
+            let command = `
+   【 ${commandOption.info}】 ${commandOption.demo}
+
+    下面是可选的配置项：
+    ${configs}
+    `;
+
+            console.log(command);
+        } else {
+            console.log(options.help);
+        }
+
     } else {
-        // todo
+
+        // 打印帮助信息
+        console.log(options.help);
+
     }
 
 }
