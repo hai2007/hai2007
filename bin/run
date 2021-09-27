@@ -97,7 +97,6 @@ else {
 
     } else if ('help' in parsed) {
 
-        console.log(parsed);
         let commandOption = options.command[parsed.help[0]];
         if (commandOption) {
 
