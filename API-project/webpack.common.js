@@ -1,10 +1,11 @@
 const QuickPaperLoaderPlugin = require('quick-paper/loader-plug/index.js');
+const pkg = JSON.parse(require('fs').readFileSync('./package.json'));
 
 module.exports = {
     entry: ['./src/entry.js'],
     output: {
         path: __dirname,
-        filename: 'build/main.js'
+        filename: 'build/main@v' + pkg.version + '.js'
     },
     module: {
         rules: [{
@@ -16,11 +17,12 @@ module.exports = {
             exclude: /node_modules/,
             loader: ['quick-paper/loader/index.js']
         }, {
-            test: /\.(png|jpg|jpeg|gif|bmp)$/,
+            test: /\.(png|jpg|jpeg|gif|bmp|svg)$/,
             loader: [{
                 loader: "url-loader",
                 options: {
-                    name: "build/[path][name].[ext]",
+                    name: "dist/[path][name].[ext]",
+                    context: "src/assets",
                     limit: 5000
                 }
             }]

@@ -27,6 +27,8 @@
   "dependencies": {
     "@hai2007/polyfill": "^0.1.1",
     "@hai2007/style": "^0.2.3",
+    "@hai2007/tool": "^0.9.1",
+    "open-web-editor": "^0.3.2",
     "quick-paper": "^1.0.0"
   }
 }
