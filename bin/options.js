@@ -12,7 +12,7 @@ module.exports = {
             demo: "hai2007 network",
             config: []
         },
-        network: {
+        server: {
             info: "启动HTTP服务器",
             demo: "hai2007 server",
             config: ['port']
@@ -39,7 +39,7 @@ module.exports = {
         port: {
             short: 'p',
             info: '服务器端口号',
-            demo: 'server --port|-p <number>'
+            demo: '--port|-p <number>'
         },
     },
 
