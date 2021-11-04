@@ -11,6 +11,11 @@ module.exports = {
             info: "查看网络相关信息",
             demo: "hai2007 network",
             config: []
+        },
+        network: {
+            info: "启动HTTP服务器",
+            demo: "hai2007 server",
+            config: ['port']
         }
     },
 
@@ -31,6 +36,11 @@ module.exports = {
             info: '显示帮助学习',
             demo: '--help|-h <term>'
         },
+        port: {
+            short: 'p',
+            info: '服务器端口号',
+            demo: 'server --port|-p <number>'
+        },
     },
 
     // 帮助信息
@@ -38,7 +48,7 @@ module.exports = {
     Usage: hai2007 <command>
     
     where <command> is one of:
-      create, network
+      create, network, server
     
     hai2007 --help|-h <命令>       打印具体的命令说明
     hai2007 --help|-h              打印所有可用命令

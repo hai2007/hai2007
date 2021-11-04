@@ -87,6 +87,20 @@ else if (terminal == 'network') {
 
 }
 
+else if (terminal == 'server') {
+
+    hai2007_nodejs.server({
+
+        // 端口号
+        port: parsed.port[0],
+
+        // 服务器根路径
+        contentBase: process.cwd()
+
+    });
+
+}
+
 // 否则
 else {
 
