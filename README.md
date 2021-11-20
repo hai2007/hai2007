@@ -4,6 +4,10 @@
 <p align="center"> 
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hai2007&show_icons=true&layout=compact&theme=light""/>
 </p>
+                                                                                                                               
+<p align="center"> 
+  <img src="https://s05.flagcounter.com/chart.cgi?bdd0"/> 
+</p>
                                                                                                                              
 <p align="center">
   <a href='https://hai2007.gitee.io/sweethome/'>
