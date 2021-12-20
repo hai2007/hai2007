@@ -35,3 +35,7 @@ v1.3.1:
     date:2021-11-04
     changes:
       -  新增服务器命令
+v1.4.0:
+    date:2021-12-20
+    changes:
+      -  新增etcpack打包

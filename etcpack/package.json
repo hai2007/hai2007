@@ -1,0 +1,26 @@
+{
+  "name": "project-name-will-replace",
+  "version": "0.1.0",
+  "description": "project-description-will-replace",
+  "scripts": {
+    "dev": "etcpack_dev --config etcpack.dev.js",
+    "build": "etcpack_pkg --config etcpack.prod.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@etcpack/babel-loader": "^0.1.1",
+    "@etcpack/quickpaper-loader": "^0.1.0",
+    "@etcpack/quickpaper-loader-plug": "^0.1.0",
+    "@etcpack/quickpaper-style-loader": "^0.1.0",
+    "@etcpack/scss-loader": "^0.1.0",
+    "etcpack": "^0.4.1"
+  },
+  "dependencies": {
+    "@hai2007/polyfill": "^0.1.1",
+    "@hai2007/style": "^0.2.3",
+    "@hai2007/tool": "^0.9.1",
+    "open-web-editor": "^0.3.2",
+    "quick-paper": "^1.2.2"
+  }
+}

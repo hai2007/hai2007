@@ -1,6 +1,6 @@
 {
   "name": "@hai2007/cli",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "description": "帮助快速使用的一些实用命令",
   "bin": {
     "hai2007": "bin/run"

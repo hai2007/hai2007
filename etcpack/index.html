@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./src/assets/logo.png" type="image/x-png">
+    <title>project-name-will-replace</title>
+</head>
+
+<body>
+
+    <div id="root"></div>
+    <script>
+
+        var host = window.location.host;
+
+        // 获取head标签
+        var head = document.getElementsByTagName('head')[0];
+
+        // 创建script
+        var script = document.createElement('script');
+
+        // 设置属性
+        script.src = "./build/main@v0.1.0.js";
+
+        if (/^127\.0\.0\.1/.test(host) || /^localhost/.test(host)) {
+            script.type = 'module';
+        }
+
+        // 追加到页面
+        head.appendChild(script);
+
+    </script>
+
+    <!-- 辅助记录访问次数 -->
+    <div style="position: fixed;left: -300px;top: 0;width: 190px;height: 103px;">
+        <img
+            src="https://s05.flagcounter.com/count2/bdd0/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_3/labels_1/pageviews_1/flags_0/percent_0/" />
+    </div>
+
+</body>
+
+</html>

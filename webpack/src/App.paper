@@ -1,0 +1,30 @@
+<template>
+
+</template>
+<script>
+
+    import uiSearch from './components/ui-search.paper';
+
+    export default {
+        data() {
+            return {
+
+            };
+        },
+        mounted() {
+
+            // 获取url信息
+            console.log(this.$urlFormat());
+
+        },
+        methods: {
+
+        },
+        component: {
+            uiSearch
+        }
+    };
+</script>
+<style lang="scss">
+    [quickpaper] {}
+</style>

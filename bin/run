@@ -49,9 +49,9 @@ if (terminal == 'create') {
     }, {
         type: 'rawlist',
         name: 'kind',
-        message: '',
-        choices: ['API-project'],
-        default: 0
+        message: '请选择打包工具',
+        choices: ['webpack','etcpack'],
+        default: 1
     }]).then(answers => {
 
         let sourcePath = hai2007_nodejs.fullPath('../' + answers.kind, __dirname);
