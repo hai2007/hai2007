@@ -10,7 +10,7 @@
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@etcpack/babel-loader": "^0.1.1",
-    "@etcpack/quickpaper-loader": "^0.1.1",
+    "@etcpack/quickpaper-loader": "^0.2.0",
     "@etcpack/quickpaper-loader-plug": "^0.1.0",
     "@etcpack/quickpaper-style-loader": "^0.1.0",
     "@etcpack/scss-loader": "^0.1.1",
