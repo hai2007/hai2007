@@ -989,7 +989,7 @@ window.__etcpack__bundleSrc__['16']=function(){
     var __etcpack__scope_args__;
     var styleElement = document.createElement('style');
 var head = document.head || document.getElementsByTagName('head')[0];
-styleElement.innerHTML = "/*!\r\n * 👁️ - 统一不同浏览器的基础样式\r\n * https://github.com/hai2007/style.css/blob/master/normalize.css\r\n *\r\n * author hai2007 < https://hai2007.gitee.io/sweethome >\r\n *\r\n * Copyright (c) 2020-present hai2007 走一步，再走一步。\r\n * Released under the MIT license\r\n */\r\n\r\nhtml {\r\n    /* 防止iPhone在坚屏转向横屏时放大文字 */\r\n    -ms-text-size-adjust: 100%;\r\n    -webkit-text-size-adjust: 100%;\r\n    /* 统一行高 */\r\n    line-height: 1.15;\r\n}\r\n\r\nbutton,\r\ninput {\r\n    /* 兼容部分手机下border不显示问题 */\r\n    border: 1px solid #b2b2bd;\r\n}\r\n\r\narticle,\r\nfooter,\r\nheader,\r\nnav,\r\nsection {\r\n    /* 修正旧浏览器未定义的块级元素 */\r\n    display: block;\r\n}\r\n\r\ncanvas,\r\nsvg {\r\n    /* 修正旧浏览器未定义的行内块元素 */\r\n    display: inline-block;\r\n}\r\n\r\n* {\r\n    /* 统一不同浏览器盒子尺寸计算方法 */\r\n    box-sizing: border-box;\r\n}\r\n\r\n::-ms-clear,\r\n::-ms-reveal {\r\n    /* 去掉IE浏览器输入框叉叉和眼睛 */\r\n    display: none;\r\n}\r\n\r\nimg {\r\n    /* 针对火狐浏览器在img标签没有src时候的差异修复 */\r\n    display: inline-block;\r\n}\r\n\r\nhtml {\r\n    /* 设置默认字体为统一的安全字体 */\r\n    font-family: sans-serif;\r\n}\r\n\r\na {\r\n    /* 默认去掉下划线 */\r\n    text-decoration: none;\r\n}\r\n\r\nli {\r\n    /* 去掉前置索引 */\r\n    list-style-type: none;\r\n}\r\n\r\nul,\r\nol,\r\nli,\r\np,\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n    /* 去掉不喜欢的间距 */\r\n    -webkit-margin-before: 0;\r\n    -webkit-margin-after: 0;\r\n    -webkit-padding-start: 0;\r\n    /* 去掉不喜欢的间距，针对火狐浏览器等 */\r\n    margin-block-end: 0;\r\n    margin-block-start: 0;\r\n    padding-inline-start: 0;\r\n    /* 修改IE和其它浏览器不一致问题 */\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n\r\nbody {\r\n    /* 去掉默认的8px */\r\n    margin: 0;\r\n}\r\n\r\ntable {\r\n    /* 设置默认表格边框合并为一个单一的边框 */\r\n    border-collapse: collapse;\r\n}\r\n";
+styleElement.innerHTML = "/*!\r\n * 👁️ - 统一不同浏览器的基础样式\r\n * https://github.com/hai2007/style.css/blob/master/normalize.css\r\n *\r\n * author hai2007 < https://hai2007.gitee.io/sweethome >\r\n *\r\n * Copyright (c) 2020-present hai2007 走一步，再走一步。\r\n * Released under the MIT license\r\n *//* 防止iPhone在坚屏转向横屏时放大文字 */\n html{\n\n-ms-text-size-adjust: 100%;\n\n-webkit-text-size-adjust: 100%;\n/* 统一行高 */\nline-height: 1.15;\n\n}\n/* 兼容部分手机下border不显示问题 */\n button, input{\n\nborder: 1px solid #b2b2bd;\n\n}\n/* 修正旧浏览器未定义的块级元素 */\n article, footer, header, nav, section{\n\ndisplay: block;\n\n}\n/* 修正旧浏览器未定义的行内块元素 */\n canvas, svg{\n\ndisplay: inline-block;\n\n}\n/* 统一不同浏览器盒子尺寸计算方法 */\n *{\n\nbox-sizing: border-box;\n\n}\n/* 去掉IE浏览器输入框叉叉和眼睛 */\n ::-ms-clear, ::-ms-reveal{\n\ndisplay: none;\n\n}\n/* 针对火狐浏览器在img标签没有src时候的差异修复 */\n img{\n\ndisplay: inline-block;\n\n}\n/* 设置默认字体为统一的安全字体 */\n html{\n\nfont-family: sans-serif;\n\n}\n/* 默认去掉下划线 */\n a{\n\ntext-decoration: none;\n\n}\n/* 去掉前置索引 */\n li{\n\nlist-style-type: none;\n\n}\n/* 去掉不喜欢的间距 */\n ul, ol, li, p, h1, h2, h3, h4, h5, h6{\n\n-webkit-margin-before: 0;\n\n-webkit-margin-after: 0;\n\n-webkit-padding-start: 0;\n/* 去掉不喜欢的间距，针对火狐浏览器等 */\nmargin-block-end: 0;\n\nmargin-block-start: 0;\n\npadding-inline-start: 0;\n/* 修改IE和其它浏览器不一致问题 */\npadding: 0;\n\nmargin: 0;\n\n}\n/* 去掉默认的8px */\n body{\n\nmargin: 0;\n\n}\n/* 设置默认表格边框合并为一个单一的边框 */\n table{\n\nborder-collapse: collapse;\n\n}\n";
 styleElement.setAttribute('type', 'text/css');head.appendChild(styleElement);
   
     return __etcpack__scope_bundle__;
@@ -3691,8 +3691,6 @@ __etcpack__scope_args__=window.__etcpack__getBundle('29');
 window.__etcpack__bundleSrc__['25']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    
-
     __etcpack__scope_args__=window.__etcpack__getBundle('26');
 var uiSearch =__etcpack__scope_args__.default;
 
@@ -3716,7 +3714,6 @@ var uiSearch =__etcpack__scope_args__.default;
             uiSearch
         }
     };
-
   
     return __etcpack__scope_bundle__;
 }
@@ -3756,7 +3753,6 @@ __etcpack__scope_args__=window.__etcpack__getBundle('28');
 window.__etcpack__bundleSrc__['27']=function(){
     var __etcpack__scope_bundle__={};
     var __etcpack__scope_args__;
-    
     __etcpack__scope_bundle__.default= {
         data() {
             return {
@@ -3772,7 +3768,6 @@ window.__etcpack__bundleSrc__['27']=function(){
             }
         }
     };
-
   
     return __etcpack__scope_bundle__;
 }
@@ -3785,7 +3780,7 @@ window.__etcpack__bundleSrc__['28']=function(){
     var __etcpack__scope_args__;
     var styleElement = document.createElement('style');
 var head = document.head || document.getElementsByTagName('head')[0];
-styleElement.innerHTML = "\r\n    [quickpaper][data-quickpaper-04c380ac]{\r\n        display: inline-block;\r\n    }\r\n\r\n    input[data-quickpaper-04c380ac]{\r\n        height: 30px;\r\n        border: none;\r\n        outline: none;\r\n        padding: 0 10px;\r\n        padding-right: 35px;\r\n        background-image: url('../assets/search.svg');\r\n        background-position: center right;\r\n        background-repeat: no-repeat;\r\n        border-radius: 3px;\r\n        background-color: rgb(243 240 240);\r\n    }\r\n";
+styleElement.innerHTML = "\n [quickpaper][data-quickpaper-04c380ac]{\n\ndisplay: inline-block;\n\n}\n\n input[data-quickpaper-04c380ac]{\n\nheight: 30px;\n\nborder: none;\n\noutline: none;\n\npadding: 0 10px;\n\npadding-right: 35px;\n\nbackground-image: url('../assets/search.svg');\n\nbackground-position: center right;\n\nbackground-repeat: no-repeat;\n\nborder-radius: 3px;\n\nbackground-color: rgb(243 240 240);\n\n}\n";
 styleElement.setAttribute('type', 'text/css');head.appendChild(styleElement);
   
     return __etcpack__scope_bundle__;
