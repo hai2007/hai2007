@@ -25,10 +25,10 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "@hai2007/polyfill": "^0.1.1",
-    "@hai2007/style": "^0.2.3",
-    "@hai2007/tool": "^0.9.1",
+    "@hai2007/polyfill": "^0.2.0",
+    "@hai2007/style": "^0.3.0",
+    "@hai2007/tool": "^1.0.0",
     "open-web-editor": "^0.3.2",
-    "quick-paper": "^1.0.0"
+    "quick-paper": "^1.2.2"
   }
 }
