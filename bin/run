@@ -61,7 +61,7 @@ if (terminal == 'create') {
         hai2007_nodejs.copySync(sourcePath, targetPath);
 
         // 修改项目参数
-        for (let item of ["index.html", "package.json", 'package-lock.json']) {
+        for (let item of ["index.html", "package.json"]) {
 
             let targetFile = hai2007_nodejs.fullPath('./' + answers.name + "/" + item, process.cwd());
 
