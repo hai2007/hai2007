@@ -47,3 +47,7 @@ v1.4.4:
     date:2021-12-23
     changes:
       -  删除项目源的package-lock.json文件
+v1.4.5:
+    date:2021-12-24
+    changes:
+      -  修复一些已知问题

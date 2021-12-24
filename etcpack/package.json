@@ -14,9 +14,10 @@
     "@etcpack/quickpaper-loader-plug": "^0.1.0",
     "@etcpack/quickpaper-style-loader": "^0.1.0",
     "@etcpack/scss-loader": "^0.1.2",
-    "etcpack": "^0.5.2"
+    "etcpack": "^0.5.3"
   },
   "dependencies": {
+    "@hai2007/browser": "^0.2.0",
     "@hai2007/polyfill": "^0.2.0",
     "@hai2007/style": "^0.3.0",
     "@hai2007/tool": "^1.0.0",

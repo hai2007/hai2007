@@ -10,7 +10,7 @@
 process.title = 'hai2007-cli';
 
 // 来自node包的资源
-const hai2007_nodejs = require('@hai2007/nodejs');
+const nodejs = require('@hai2007/nodejs');
 const inquirer = require('inquirer');
 
 // 原生接口
@@ -28,7 +28,7 @@ for (let key in options.config) {
 }
 
 // 获取命令行参数
-const parsed = hai2007_nodejs.option(shortHands, process.argv);
+const parsed = nodejs.option(shortHands, process.argv);
 
 const terminal = parsed.__terminal__[0];
 
@@ -54,16 +54,16 @@ if (terminal == 'create') {
         default: 1
     }]).then(answers => {
 
-        let sourcePath = hai2007_nodejs.fullPath('../' + answers.kind, __dirname);
-        let targetPath = hai2007_nodejs.fullPath('./' + answers.name, process.cwd());
+        let sourcePath = nodejs.fullPath('../' + answers.kind, __dirname);
+        let targetPath = nodejs.fullPath('./' + answers.name, process.cwd());
 
         // 复制项目到命令行所在位置
-        hai2007_nodejs.copySync(sourcePath, targetPath);
+        nodejs.copySync(sourcePath, targetPath);
 
         // 修改项目参数
         for (let item of ["index.html", "package.json"]) {
 
-            let targetFile = hai2007_nodejs.fullPath('./' + answers.name + "/" + item, process.cwd());
+            let targetFile = nodejs.fullPath('./' + answers.name + "/" + item, process.cwd());
 
             // 读取
             let fileContent = fs.readFileSync(targetFile, 'utf-8');
@@ -89,7 +89,7 @@ else if (terminal == 'network') {
 
 else if (terminal == 'server') {
 
-    hai2007_nodejs.server({
+    nodejs.server({
 
         // 端口号
         port: (parsed.port && parsed.port[0]) ? parsed.port[0] : 8080,

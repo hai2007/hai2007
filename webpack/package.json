@@ -5,13 +5,13 @@
   "scripts": {
     "start": "npm install && npm run dev",
     "dev": "node_modules/.bin/webpack-dev-server --config webpack.dev.js",
-    "build": "hai2007_nodejs -d build && webpack --config webpack.prod.js"
+    "build": "nodejs -d build && webpack --config webpack.prod.js"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@hai2007/algorithm": "^0.6.2",
-    "@hai2007/nodejs": "^1.0.0",
+    "@hai2007/nodejs": "^2.1.0",
     "autoprefixer": "^9.5.1",
     "babel-loader": "^8.0.6",
     "css-loader": "^2.1.1",
@@ -25,6 +25,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "@hai2007/browser": "^0.2.0",
     "@hai2007/polyfill": "^0.2.0",
     "@hai2007/style": "^0.3.0",
     "@hai2007/tool": "^1.0.0",

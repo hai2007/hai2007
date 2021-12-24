@@ -1,6 +1,6 @@
 {
   "name": "@hai2007/cli",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "description": "帮助快速使用的一些实用命令",
   "bin": {
     "hai2007": "bin/run"
@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/hai2007/hai2007#readme",
   "dependencies": {
-    "@hai2007/nodejs": "^1.2.0",
-    "@hai2007/tool": "^0.9.0",
+    "@hai2007/nodejs": "^2.1.0",
+    "@hai2007/tool": "^1.0.0",
     "inquirer": "^8.1.2"
   }
 }
