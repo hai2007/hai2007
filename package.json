@@ -1,27 +1,27 @@
 {
-  "name": "@hai2007/cli",
-  "version": "1.4.5",
-  "description": "帮助快速使用的一些实用命令",
-  "bin": {
-    "hai2007": "bin/run"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hai2007/hai2007.git"
-  },
-  "keywords": [
-    "hai2007",
-    "cli"
-  ],
-  "author": "你好2007",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hai2007/hai2007/issues"
-  },
-  "homepage": "https://github.com/hai2007/hai2007#readme",
-  "dependencies": {
-    "@hai2007/nodejs": "^2.1.0",
-    "@hai2007/tool": "^1.0.0",
-    "inquirer": "^8.1.2"
-  }
+    "name": "@hai2007/cli",
+    "version": "1.5.0",
+    "description": "帮助快速使用的一些实用命令",
+    "bin": {
+        "hai2007": "bin/run"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hai2007/hai2007.git"
+    },
+    "keywords": [
+        "hai2007",
+        "cli"
+    ],
+    "author": "你好2007",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hai2007/hai2007/issues"
+    },
+    "homepage": "https://github.com/hai2007/hai2007#readme",
+    "dependencies": {
+        "@hai2007/nodejs": "^2.1.0",
+        "@hai2007/tool": "^1.0.0",
+        "inquirer": "^8.1.2"
+    }
 }

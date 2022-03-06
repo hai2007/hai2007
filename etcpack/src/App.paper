@@ -2,7 +2,6 @@
 
 </template>
 <script>
-
     import uiSearch from './components/ui-search.paper';
 
     export default {
