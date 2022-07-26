@@ -1,21 +1,21 @@
+<p align="center"><img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=hai2007" alt="hai2007" align = "center"/></p>
+
 <p align="center"> 
   <img src="https://github-readme-stats.vercel.app/api?username=hai2007&show_icons=true&theme=light"/> 
 </p>
+
+<p align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=hai2007&hide_border=true&stroke=0000&background=ffffff&ring=e05397&fire=e05397&currStreakLabel=e05397" alt="hai2007" /></p>
+
 <p align="center"> 
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hai2007&show_icons=true&layout=compact&theme=light""/>
 </p>
-                                                                                                                               
+                                                                                                                
 <p align="center"> 
   <img src="https://s05.flagcounter.com/chart.cgi?bdd0"/> 
 </p>
-                                                                                                                             
-<p align="center">
-  <a href='https://hai2007.gitee.io/sweethome/'>
-    <img src="https://hai2007.gitee.io/sweethome/dist/cat.jpeg" />
-  </a>
-</p>
-                                                               
-<img align='right' src='https://hai2007.gitee.io/sweethome/dist/dream.png' />  
+                                                                                                                            
+
+<p align="center"<a href="#"><img alt="Ashish Kumar Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=hai2007&bg_color=ffffff&color=e05397&line=e05397&point=aaaaaa&hide_border=false&" /></a></p>
                                                                                                                                
 # [What I Believe](https://hai2007.gitee.io/sweethome)
 
